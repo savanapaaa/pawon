@@ -1,0 +1,127 @@
+@media screen and (min-width: 500px) {
+    .mobile-navbar {
+        display: none;
+    }
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .desktop-nav {
+        display: none;
+    }
+    .mobile-nav {
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+        transition: transform 0.3s ease;
+    }
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    .mobile-nav-item {
+        display: list-item;
+        color: black !important;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .list_item_content {
+        padding: 16px 32px 32px 32px;
+    }
+    .list_item_title {
+        font-size: 18px;
+    }
+    .list_item_desc {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 300px; /* Hero lebih kecil pada perangkat mobile */
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .mobile-nav {
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .mobile-nav-list {
+        width: 100%;
+    }
+
+    .desktop-nav-list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .desktop-nav a {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .latest-explore h1 {
+        font-size: 1.8em;
+    }
+
+    .list_item_thumb {
+        height: 250px; /* Mengurangi ukuran gambar pada perangkat kecil */
+    }
+}
