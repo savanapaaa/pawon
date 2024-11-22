@@ -2,6 +2,8 @@ import 'regenerator-runtime';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import App from '../views/app';
+import swRegister from './utils/sw-register';
+
 
 // fetch('https://restaurant-api.dicoding.dev/list')
 // .then((response) => {
@@ -65,6 +67,7 @@ const app = new App({
 
 document.addEventListener('DOMContentLoaded', () => {
   app.renderPage();
+  swRegister();
 });
 
 window.addEventListener('hashchange', () => {
