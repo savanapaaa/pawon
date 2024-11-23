@@ -73,3 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('hashchange', () => {
   app.renderPage();
 });
+
+
+const menuButton = document.getElementById('menu');
+const drawer = document.getElementById('drawer');
+
+menuButton.addEventListener('click', function () {
+    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', !isExpanded);
+    drawer.classList.toggle('open');
+});

@@ -67,6 +67,10 @@ body {
     text-align: center; /* Menyelaraskan teks di tengah */
 }
 
+.mobile-nav.open {
+    display: block;
+}
+
 /* Desktop Navbar */
 .desktop-nav {
     background: linear-gradient(90deg, #1a73e8, #4caf50);

@@ -3,22 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="manifest" href="./app.webmanifest">
         <title>Pawon Resto - New Version</title>
     </head>
 
 <body>
-    <a href="#content" class="skip-link skip-content" tabindex="0">To Main Content</a>
+    <a href="#main-content" class="skip-link skip-content" tabindex="0">To Main Content</a>
     
     <!-- Mobile Navbar -->
     <div class="mobile-navbar">
-        <div class="menu-icon" id="menu"><a href="#" tabindex="0">&#9776;</a></div>
+        <button class="menu-icon" id="menu" aria-expanded="false" aria-label="Toggle menu">
+            &#9776;
+        </button>
         <div class="logo-mobile" tabindex="0">Pawon Resto</div>
         <div class="empty-space">&nbsp;</div>
     </div>
     <nav id="drawer" class="mobile-nav">
         <ul class="mobile-nav-list">
             <li class="mobile-nav-item"><a href="" tabindex="0">Home</a></li>
-            <li class="mobile-nav-item"><a href="/favorite" tabindex="0">Favorite</a></li>
+            <li class="mobile-nav-item"><a href="/#/favorite" tabindex="0">Favorite</a></li>
             <li class="mobile-nav-item"><a href="https://www.instagram.com/savanapa_/" target="_blank" rel="noopener"  tabindex="0">About Us</a></li>
         </ul>
     </nav>
